@@ -28,6 +28,6 @@ jobs:
       - run: echo "A more familiar hi"
       - attach_workspace:
           at: my_workspace
-      - run:
+      - run: |
           if [[ $(cat my_workspace/echo-output) -- "trying out workspace" ]]; then
             echo "it worked";
