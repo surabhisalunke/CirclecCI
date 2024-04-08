@@ -29,5 +29,5 @@ jobs:
       - attach_workspace:
           at: my_workspace
       - run: |
-          if [[ $(cat my_workspace/echo-output) -- "trying out workspace" ]]; then
+          if [[ $(cat my_workspace/echo-output) -- "trying out workspaces" ]]; then
             echo "it worked";
